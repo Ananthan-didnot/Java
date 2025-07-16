@@ -1,3 +1,16 @@
+/*******************************************************
+ * --------------------------------------------------- *
+ *  Project   : Java Objects                           *
+ *  Author    : Ananthakrishnan K V                    *
+ *  Version   : 1.0                                    *
+ *  Language  : Java                                   *
+ *  Created   : 14-07-2025                             *
+ *  Updated   : 16-07-2025                             *
+ *  Purpose   : Familiarize the Java Objects           *
+ * --------------------------------------------------- *
+ *            Let code flow like poetry! 🚀            *
+ *******************************************************/
+
 class Car {
     String make = "Toyota";
     String model = "Supra";
