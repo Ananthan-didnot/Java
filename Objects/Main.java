@@ -2,36 +2,50 @@
  * --------------------------------------------------- *
  *  Project   : Java Objects                           *
  *  Author    : Ananthakrishnan K V                    *
- *  Version   : 1.0                                    *
+ *  Version   : 2.0                                    *
  *  Language  : Java                                   *
- *  Created   : 14-07-2025                             *
- *  Updated   : 16-07-2025                             *
- *  Purpose   : Familiarize the Java Objects           *
+ *  Created   : 17-07-2025                             *
+ *  Updated   : 17-07-2025                             *
+ *  Purpose   : Program to familiarize java objects    *
  * --------------------------------------------------- *
  *            Let code flow like poetry! 🚀            *
  *******************************************************/
-
-class Car {
-    String make = "Toyota";
-    String model = "Supra";
-    int year = 2020;
-
-    void start() {
-        System.out.println("The car is starting.");
-    }
-
-    void stop() {
-        System.out.println("The car is stopping.");
-    }
-}
+import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        Car myCar = new Car();
-        myCar.start();
-        System.out.println("Car make: " + myCar.make);
-        System.out.println("Car model: " + myCar.model);
-        System.out.println("Car year: " + myCar.year);
-        myCar.stop();
+        
+        Book book = new Book("DC BOOKS");
+
+        /*book.title = "Wings of Fire";
+        book.author = "APJ Abdul Kalam";*/
+        book.readDetails();
+        book.printDetails();
+
+    }
+}
+
+class Book {
+
+    Scanner input = new Scanner(System.in);
+
+    String publisher;
+    String title;
+    String author;
+
+    Book(String pb){
+        this.publisher = pb;
+    }
+
+    public void readDetails(){
+        System.out.print("Enter the details of the book(Title,Author): ");
+        title = input.nextLine();
+        author = input.nextLine();
+    }
+
+    public void printDetails(){
+        System.out.println("Title: "+title);
+        System.out.println("Autor: "+author);
+        System.out.println("Publisher: "+publisher);
     }
 }
